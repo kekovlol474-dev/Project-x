@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой личный сайт</title>
     <style>
-        /* Настройки шрифтов и общего фона */
         html {
-            scroll-behavior: smooth; /* Плавная прокрутка при клике по меню */
+            scroll-behavior: smooth; 
         }
         
         body @font-face {
@@ -15,14 +14,14 @@
     src: url('angst-serif.ttf'); angst-serif.ttf
 } 
             font-size: 21px;
-            background-color: #f4f6f8; /* Светлый, приятный фон */
+            background-color: #f4f6f8; 
             color: #222;
             margin: 0;
             padding: 0;
             line-height: 1.5;
         }
 
-        /* Шапка сайта */
+        
         header {
             background-color: #2c3e50;
             color: white;
@@ -39,7 +38,6 @@
             text-align: center;
         }
 
-        /* Меню навигации */
         nav ul {
             list-style: none;
             padding: 0;
@@ -64,7 +62,6 @@
             color: white;
         }
 
-        /* Основной контент */
         main {
             max-width: 1100px;
             margin: 0 auto;
@@ -87,7 +84,6 @@
             margin-top: 0;
         }
 
-        /* Сетка для карточек (музыка, вузы, кино) */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -97,7 +93,7 @@
 
         .card {
             background-color: #fff;
-            border: 2px solid #bdc3c7; /* Рамка вокруг карточки */
+            border: 2px solid #bdc3c7; 
             border-radius: 8px;
             padding: 15px;
             text-align: center;
@@ -109,12 +105,12 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        /* Рамки для изображений */
+        
         .image-frame {
             width: 100%;
             height: 200px;
             background-color: #ecf0f1;
-            border: 3px dashed #95a5a6; /* Стильная рамка-заглушка */
+            border: 3px dashed #95a5a6; 
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -125,7 +121,6 @@
             font-weight: bold;
         }
 
-        /* Настройка реальных картинок, когда ты их добавишь */
         .image-frame img {
             width: 100%;
             height: 100%;
@@ -154,7 +149,6 @@
             background-color: #2980b9;
         }
 
-        /* Подвал */
         footer {
             text-align: center;
             padding: 20px;
@@ -180,27 +174,22 @@
     </header>
 
     <main>
-        <!-- Блок 1: Обо мне -->
         <section id="about">
             <h2>Обо мне</h2>
             <p>Привет! Меня зовут Зверев Георгий. Я — ученик <strong>Петергофской гимназии императора Александра II</strong>.</p>
             <p>Этот сайт — мое портфолио, где я рассказываю о том, что мне нравится, и куда я стремлюсь.</p>
         </section>
 
-        <!-- Блок 2: Музыка -->
         <section id="music">
             <h2>Мои увлечения: Музыка</h2>
             <div class="grid-container">
-                <!-- Карточка 1 -->
                 <div class="card">
                     <div class="image-frame">
-                        <!-- Замени ссылку внутри src на путь к своей картинке -->
                         <img src="images/Doors.JPG">
                     </div>
                     <h3>The Doors</h3>
                     <p>Легендарный рок-коллектив.</p>
                 </div>
-                <!-- Карточка 2 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/Mars Volta.jpg>
@@ -218,22 +207,17 @@
                 </div>
             </div>
         </section>
-
-        <!-- Блок 3: Институты -->
         <section id="universities">
             <h2>Куда я хочу поступить</h2>
             <div class="grid-container">
-                <!-- ВУЗ 1 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/Горный.jpg">
                     </div>
                     <h3>Горный Институт</h3>
                     <p>Санкт-Петербургский горный университет императрицы Екатерины II.</p>
-                    <!-- target="_blank" открывает ссылку в новой вкладке -->
                     <a href="https://spmi.ru/" target="_blank">Перейти на сайт</a>
                 </div>
-                <!-- ВУЗ 2 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/ЛЭТИ.jpg">
@@ -242,7 +226,6 @@
                     <p>СПбГЭТУ «ЛЭТИ» им. В.И. Ульянова (Ленина).</p>
                     <a href="https://etu.ru/" target="_blank">Перейти на сайт</a>
                 </div>
-                <!-- ВУЗ 3 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/СПБГУТ.jpg">
@@ -254,11 +237,9 @@
             </div>
         </section>
 
-        <!-- Блок 4: Фильмы -->
         <section id="movies">
             <h2>Любимые фильмы</h2>
             <div class="grid-container">
-                <!-- Фильм 1 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/Брат.jpg>
@@ -272,14 +253,12 @@
                     </div>
                     <h3>The perks of being a wallflower</h3>
                 </div>
-                <!-- Фильм 3 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/Trainspotting.jpg">
                     </div>
                     <h3>На Игле</h3>
                 </div>
-                <!-- Фильм 4 -->
                 <div class="card">
                     <div class="image-frame">
                         <img src="images/SHUTTER ISLAND.jpg">
@@ -296,10 +275,6 @@
 
 </body>
 </html>
-
-    <footer>
-        <p>&copy; 2009 Ìîé ëè÷íûé ñàéò. Âñå ïðàâà çàùèùåíû.</p>
-    </footer>
 
 </body>
 </html>
