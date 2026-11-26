@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой личный сайт</title>
+    <style>
+        /* Настройки шрифтов и общего фона */
+        html {
+            scroll-behavior: smooth; /* Плавная прокрутка при клике по меню */
+        }
+        
+        body @font-face {
+    font-family: 'ANGST SERIF';
+    src: url('angst-serif.ttf'); angst-serif.ttf
+} 
+            font-size: 21px;
+            background-color: #f4f6f8; /* Светлый, приятный фон */
+            color: #222;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        /* Меню навигации */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Основной контент */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Сетка для карточек (музыка, вузы, кино) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 2px solid #bdc3c7; /* Рамка вокруг карточки */
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Рамки для изображений */
+        .image-frame {
+            width: 100%;
+            height: 200px;
+            background-color: #ecf0f1;
+            border: 3px dashed #95a5a6; /* Стильная рамка-заглушка */
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 15px;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        /* Настройка реальных картинок, когда ты их добавишь */
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .card a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Подвал */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#music">Музыка</a></li>
+                <li><a href="#universities">Институты</a></li>
+                <li><a href="#movies">Кино</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Блок 1: Обо мне -->
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Зверев Георгий. Я — ученик <strong>Петергофской гимназии императора Александра II</strong>.</p>
+            <p>Этот сайт — мое портфолио, где я рассказываю о том, что мне нравится, и куда я стремлюсь.</p>
+        </section>
+
+        <!-- Блок 2: Музыка -->
+        <section id="music">
+            <h2>Мои увлечения: Музыка</h2>
+            <div class="grid-container">
+                <!-- Карточка 1 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <!-- Замени ссылку внутри src на путь к своей картинке -->
+                        <img src="images/Doors.JPG">
+                    </div>
+                    <h3>The Doors</h3>
+                    <p>Легендарный рок-коллектив.</p>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/Mars Volta.jpg>
+                    </div>
+                    <h3>The Mars Volta</h3>
+                    <p>Уникальное звучание и прогрессив.</p>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/Jamiroquai.jpg">
+                    </div>
+                    <h3>Jamiroquai</h3>
+                    <p>Непревзойденный фанк и acid jazz.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 3: Институты -->
+        <section id="universities">
+            <h2>Куда я хочу поступить</h2>
+            <div class="grid-container">
+                <!-- ВУЗ 1 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/Горный.jpg">
+                    </div>
+                    <h3>Горный Институт</h3>
+                    <p>Санкт-Петербургский горный университет императрицы Екатерины II.</p>
+                    <!-- target="_blank" открывает ссылку в новой вкладке -->
+                    <a href="https://spmi.ru/" target="_blank">Перейти на сайт</a>
+                </div>
+                <!-- ВУЗ 2 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/ЛЭТИ.jpg">
+                    </div>
+                    <h3>ЛЭТИ</h3>
+                    <p>СПбГЭТУ «ЛЭТИ» им. В.И. Ульянова (Ленина).</p>
+                    <a href="https://etu.ru/" target="_blank">Перейти на сайт</a>
+                </div>
+                <!-- ВУЗ 3 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/СПБГУТ.jpg">
+                    </div>
+                    <h3>СПбГУТ</h3>
+                    <p>Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А. Бонч-Бруевича.</p>
+                    <a href="https://sut.ru/" target="_blank">Перейти на сайт</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 4: Фильмы -->
+        <section id="movies">
+            <h2>Любимые фильмы</h2>
+            <div class="grid-container">
+                <!-- Фильм 1 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/Брат.jpg>
+                    </div>
+                    <h3>Брат</h3>
+                </div>
+                <!-- Фильм 2 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/the perks of being a wallflower poster.jpg">
+                    </div>
+                    <h3>The perks of being a wallflower</h3>
+                </div>
+                <!-- Фильм 3 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/Trainspotting.jpg">
+                    </div>
+                    <h3>На Игле</h3>
+                </div>
+                <!-- Фильм 4 -->
+                <div class="card">
+                    <div class="image-frame">
+                        <img src="images/SHUTTER ISLAND.jpg">
+                    </div>
+                    <h3>Остров Проклятых</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2009 Мой личный сайт. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
